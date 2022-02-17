@@ -1,0 +1,20 @@
+<form>
+  <div class="row align-items-center">
+    <div class="col-auto">
+      <label for="" class="col-form-label">New {{ label }}</label>
+    </div>
+    <div class="col-auto">
+      <input type="text" class="form-control" id="newItem" #newItem />
+    </div>
+    <div class="col-auto">
+      <button
+        type="button"
+        class="btn"
+        [ngClass]="[className]"
+        (click)="onAddNewItem(newItem.value)"
+      >
+        New {{ label }}
+      </button>
+    </div>
+  </div>
+</form>
