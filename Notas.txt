@@ -1,0 +1,20 @@
+- Directivas
+	* Las directivas son como atributos que pueden cambiar la apariencia o el comportamiento del DOM element
+	* Estructurales: Puede modificar elementos del dom, mostrando u ocultando elementos
+	* De atributos: ngclass/ngstyle adicionan o modifican los atributos de un elemento
+- Decoradores
+	* Es un tipo especial de declaración que se puede adjuntar a una clase, método, descriptor de acceso, propiedad o parámetro
+	* Input() -> En un componente o directiva hijo, significa que la propiedad puede recibir su valor de su componente padre
+	* Output() -> En un componente (o directiva) hijo permite que los datos fluyan del hijo al padre
+- Change detection
+	* Mecanismo que utiliza angular para detectar cuando el model cambia, renderizar la vista en relación a los cambios que han pasado.
+	* Angular crea una especie de árbol que va desde arriba hacia abajo, cada componente tiene su propio detector de cambios
+	* Los que produce los cambios pueden ser los eventos del mouse, llamadas ajax, setainterval, setTimeout
+	* Tipos de change detection
+		- OnPush -> Establece la estrategia en CheckOnce (bajo demanda), 
+		- Default -> Establece la estrategia en CheckAlways, revisa en el arbol si ha habido cambios
+- Pipe
+	* Sirven para transformar información
+	* Por default se definen como puros, de modo que angular ejecuta el pipe solo cuando detecta un cambio puro en el valor de entrada, los pipes inpuros
+		cada vez que se ejecuta el ciclo de detección de cambios, angular volverá a transformar la data incluso si esta no ha cambiado
+	* 
