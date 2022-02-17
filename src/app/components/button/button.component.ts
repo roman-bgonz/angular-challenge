@@ -5,6 +5,7 @@ import {
   OnChanges,
   SimpleChanges,
   OnDestroy,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 
 @Component({
@@ -13,6 +14,7 @@ import {
     {{ label }}
   </button>`,
   styleUrls: ['./button.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent implements OnInit, OnChanges, OnDestroy {
   @Input() color: string;

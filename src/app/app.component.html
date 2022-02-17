@@ -9,13 +9,12 @@
     </div>
     <div class="col-md-8 mt-2">
       <ul>
-        <li
+        <app-cities
           *ngFor="let city of cities"
-          (click)="onClickedCity(city)"
-          [ngClass]="{ 'alert alert-info': city === selection }"
-        >
-          {{ city }}
-        </li>
+          (cityClickedEvent)="onClickedCity($event)"
+          [city]="city"
+          [selection]="selection"
+        ></app-cities>
       </ul>
     </div>
     <div class="col-md-4">
