@@ -1,22 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from './app.component';
-import { ButtonComponent } from './components/button/button.component';
-import { FormNewItemComponent } from './components/form-new-item/form-new-item.component';
-import { CitiesComponent } from './components/cities/cities.component';
+import { AppComponent } from "./app.component";
+import { ButtonComponent } from "./components/button/button.component";
+import { FormNewItemComponent } from "./components/form-new-item/form-new-item.component";
+import { CitiesComponent } from "./components/cities/cities.component";
+import { FilterPipe } from "./pipes/filter.pipe";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     FormNewItemComponent,
-    CitiesComponent
+    CitiesComponent,
+    FilterPipe,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

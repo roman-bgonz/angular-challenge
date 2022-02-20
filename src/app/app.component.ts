@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = 'angular-challenge';
+  title = "angular-challenge";
 
-  selection = '';
+  selection = "";
 
-  cities = ['Ciudad de México', 'Monterrey', 'Guadalajara'];
+  cities = ["Ciudad de México", "Monterrey", "Guadalajara"];
+
+  criteria = "";
 
   onClickedCity(city: string): void {
     this.selection = city;
@@ -21,6 +23,6 @@ export class AppComponent {
   }
 
   clear(): void {
-    this.selection = '';
+    this.selection = "";
   }
 }
