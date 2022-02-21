@@ -9,6 +9,9 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactReactiveComponent } from './components/contact-reactive/contact-reactive.component';
+import { HomeComponent } from './components/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +22,10 @@ import { ContactReactiveComponent } from './components/contact-reactive/contact-
     FilterPipe,
     ContactComponent,
     ContactReactiveComponent,
+    HomeComponent,
+    NavbarComponent,
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
