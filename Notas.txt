@@ -19,4 +19,8 @@
 		cada vez que se ejecuta el ciclo de detección de cambios, angular volverá a transformar la data incluso si esta no ha cambiado
 - Formularios
 	* Template-drive forms
-		* Son idelaes para crear formularios sencillos, sin tanta lógica
+		- Son idelaes para crear formularios sencillos, sin tanta lógica
+		- Se debe importar FormsModule
+	* Formularios reactivos
+		- Todo parte de una clase AbstractControl -> FormControl - FormGroup - FormArray
+		- Se debe importar ReactiveFormsModule
