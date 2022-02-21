@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 interface IContactForm {
   name: string;
@@ -8,23 +9,28 @@ interface IContactForm {
 }
 
 @Component({
-  selector: "app-contact",
-  templateUrl: "./contact.component.html",
-  styleUrls: ["./contact.component.css"],
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  constructor() {}
+  constructor(private readonly route: ActivatedRoute) {}
+  id = '';
 
   model: IContactForm = {
-    name: "",
+    name: '',
     checkAdult: false,
-    department: "",
-    comment: "",
+    department: '',
+    comment: '',
   };
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      this.id = params['id'];
+    });
+  }
 
   onSubmit(form: any): void {
-    console.log("Form values", form);
+    console.log('Form values', form);
   }
 }
