@@ -17,4 +17,6 @@
 	* Sirven para transformar información
 	* Por default se definen como puros, de modo que angular ejecuta el pipe solo cuando detecta un cambio puro en el valor de entrada, los pipes inpuros
 		cada vez que se ejecuta el ciclo de detección de cambios, angular volverá a transformar la data incluso si esta no ha cambiado
-	* 
+- Formularios
+	* Template-drive forms
+		* Son idelaes para crear formularios sencillos, sin tanta lógica
