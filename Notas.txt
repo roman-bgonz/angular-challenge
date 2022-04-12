@@ -24,3 +24,7 @@
 	* Formularios reactivos
 		- Todo parte de una clase AbstractControl -> FormControl - FormGroup - FormArray
 		- Se debe importar ReactiveFormsModule
+- Resolver
+	* Interface que las clases pueden implementar para ser un proveedor de datos.
+	* Se debe usar con el router para resolver datos durante la navegación
+	* Se debe implementar un método resolve() que se invoca cuando comienza la navegación. El router espera a que se resuelvan los datos antes de que finalmente se active la ruta
