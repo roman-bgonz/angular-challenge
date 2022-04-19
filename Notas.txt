@@ -33,3 +33,5 @@
 	a donde vamos a renderizar el componente, ese renderizado no inicie hasta que tengamos los datos
 	* Se usa con el router
 	* Mencanismo para que cuando lleguemos a un componente, ya se tengan listos los datos a usar, y así no inciar el ciclo de vida del componente
+- Lazy loading
+	* Es la técnica para retrasar la carga de un módulo hasta que el usuario o la app lo necesitan
