@@ -27,4 +27,9 @@
 - Resolver
 	* Interface que las clases pueden implementar para ser un proveedor de datos.
 	* Se debe usar con el router para resolver datos durante la navegación
-	* Se debe implementar un método resolve() que se invoca cuando comienza la navegación. El router espera a que se resuelvan los datos antes de que finalmente se active la ruta
+	* Se debe implementar un método resolve() que se invoca cuando comienza la navegación.
+	El router espera a que se resuelvan los datos antes de que finalmente se active la ruta
+	* Sirve como proveedor de datos, funge como middleware, cuando la navegación inicia él se va a encargar si nosotros necesitamos los datos en esa ruta
+	a donde vamos a renderizar el componente, ese renderizado no inicie hasta que tengamos los datos
+	* Se usa con el router
+	* Mencanismo para que cuando lleguemos a un componente, ya se tengan listos los datos a usar, y así no inciar el ciclo de vida del componente
