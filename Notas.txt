@@ -35,3 +35,6 @@
 	* Mencanismo para que cuando lleguemos a un componente, ya se tengan listos los datos a usar, y así no inciar el ciclo de vida del componente
 - Lazy loading
 	* Es la técnica para retrasar la carga de un módulo hasta que el usuario o la app lo necesitan
+	* En el routing principal se usa forRoot y en lo módulos hijos el forChild
+		- Básicamente angular utiliza el forRoot para poner todas las rutas en el módulo raíz, esto es, todo lo que es EAGER (no lazy loading) se
+		carga de manera inmediata.
