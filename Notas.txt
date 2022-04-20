@@ -38,3 +38,5 @@
 	* En el routing principal se usa forRoot y en lo módulos hijos el forChild
 		- Básicamente angular utiliza el forRoot para poner todas las rutas en el módulo raíz, esto es, todo lo que es EAGER (no lazy loading) se
 		carga de manera inmediata.
+- Http interceptors
+	* Intercepta una petición HTTP y la puede modificar, tanto una petición como una respuesta
