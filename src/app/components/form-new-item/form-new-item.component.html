@@ -19,7 +19,7 @@
         type="button"
         class="btn"
         [ngClass]="[className]"
-        (click)="onAddNewItem(newItem.value); newItem.value = ''"
+        (click)="onAddNewItem()"
       >
         Add {{ label }}
       </button>
@@ -28,7 +28,7 @@
         type="button"
         class="btn"
         [ngClass]="[className]"
-        (click)="onUpdateItem(selection, newItem.value); newItem.value = ''"
+        (click)="onUpdateItem()"
       >
         Update {{ label }}
       </button>

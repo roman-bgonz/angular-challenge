@@ -63,4 +63,14 @@
 - Ng-container
 	* Puede contener directivas estructurales y no añade ningún elemento al DOM
 - Ng-Template
-	- Ofrece una plantilla que no se renderiza por defecto, si no que notros decidimos cuando queremos que se muestre
+	* Ofrece una plantilla que no se renderiza por defecto, si no que notros decidimos cuando queremos que se muestre
+- ViewChild
+	* Decorador de propiedades que configura una consulta de vista
+	* El detector busca el primer elemento o directiva que coincida con el selector en el DOM
+	* Si el DOM cambia y un elemento secundario coincide con el selector que se le pase, la propiedad de actualiza
+	* Selectores admitidofa-spin
+		- Cualquier clase decorada con @Component o @Directive
+		- Template reference variable como string
+		- TemplateRef
+		- NgModel
+	* Es parecido al getElementById
