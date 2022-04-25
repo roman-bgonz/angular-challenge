@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,10 +6,8 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
   constructor(private router: Router) {}
-
-  ngOnInit(): void {}
 
   goToReactive = (): void => {
     this.router.navigate(['contact-reactive'], {

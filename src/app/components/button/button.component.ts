@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   Input,
   OnChanges,
   SimpleChanges,
@@ -16,13 +15,9 @@ import {
   styleUrls: ['./button.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ButtonComponent implements OnInit, OnChanges, OnDestroy {
+export class ButtonComponent implements OnChanges, OnDestroy {
   @Input() color: string;
   @Input() label: string;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log('ngOnChanges', changes);

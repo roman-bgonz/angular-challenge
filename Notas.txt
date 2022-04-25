@@ -74,3 +74,4 @@
 		- TemplateRef
 		- NgModel
 	* Es parecido al getElementById
+- Para la configuración se sigue el siguiente gist https://gist.github.com/bezael/5086db4bf7fd4655969a8da4e5ec1ab8
