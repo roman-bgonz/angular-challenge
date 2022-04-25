@@ -60,4 +60,7 @@
 			* Proporciona operadores
 - Content projection
 	* Patron para proyectar/insertar contenido en otros componentes
-	* 
+- Ng-container
+	* Puede contener directivas estructurales y no añade ningún elemento al DOM
+- Ng-Template
+	- Ofrece una plantilla que no se renderiza por defecto, si no que notros decidimos cuando queremos que se muestre
