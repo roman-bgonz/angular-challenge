@@ -40,3 +40,24 @@
 		carga de manera inmediata.
 - Http interceptors
 	* Intercepta una petición HTTP y la puede modificar, tanto una petición como una respuesta
+- Programación reactiva
+	* Orientada al manejo de streams asincronos y la propagación de cambios
+	* RXJS -> Libreria para componer programas asíncronos y basados en eventos usando secuencias observables
+		- Nos permite hacer programación reactiva. No es una librería específica para Angular, se puede usar en otras tecnologías
+	* Observable -> No es maás que un stream de datos
+	* Stream de datos -> Representa una relación de 1 a muchos, y está basado en un patrón observer que es donde hay 3 grandes protagonistas (observable, observadores, suscripciones)
+	* Subject -> Tiene el mismo comportamiento que un observable, pero este puede compartir data con varios observadores u observers
+		- Subject, behavior subject, replay subject, async subject
+	* Promise vs Observable
+		- Promise:
+			* Se ejcuta inmediatamente
+			* Emite un solo valor
+			* Envia los errores a la promesa hija
+			* Usa la clausula .then()
+		- Observable
+			* No comienza hasta la suscripción
+			* Múltiples valores a lo largo del tiempo
+			* Proporciona operadores
+- Content projection
+	* Patron para proyectar/insertar contenido en otros componentes
+	* 

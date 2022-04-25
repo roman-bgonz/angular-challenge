@@ -50,9 +50,6 @@ export class HomeComponent implements OnInit {
   }
 
   clear(): void {
-    this.selection = {
-      _id: '',
-      name: '',
-    };
+    this.selection = null;
   }
 }
