@@ -16,13 +16,18 @@ export class HomeComponent implements OnInit {
   constructor(private readonly service: DataService) {}
 
   ngOnInit(): void {
+    this.service.selectedCity$.subscribe(
+      (city: City) => (this.selection = city)
+    );
+
     this.service.getCities().subscribe({
       next: (res) => (this.cities = [...res]),
     });
   }
 
   onCitySelected(city: City): void {
-    this.selection = city;
+    // this.selection = city;
+    this.service.setCity(city);
   }
 
   addNewCity(city: string): void {
